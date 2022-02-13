@@ -4,116 +4,103 @@
 <head>
   <meta charset="utf-8">
   <title>MK</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="container">
-    <nav class="nav-bar">
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-
-        <ul class="menu__box">
-          <li><a class="menu__item" href="#">S</a></li>
-          <li><a class="menu__item" href="#">Проекты</a></li>
-          <li><a class="menu__item" href="#">Команда</a></li>
-          <li><a class="menu__item" href="#">Блог</a></li>
-          <li><a class="menu__item" href="#">Контакты</a></li>
-        </ul>
-      </div>
-
-      <div class="personal-info">
-        <p>MK kier: 123 grupa: 5</p>
-      </div>
-    </nav>
-
-    <section class="articles">
-      <h1 class="section-tittle">Artykuły</h1>
-
-      <div class="articles-main-container">
-       <div class="articles-container1">
-         <div class="article-block">
-           <header>
-             <h1>A heading here</h1>
-             <p>Posted by John Doe</p>
-           </header>
-           <p>Lorem Ipsum dolor set amet....</p>
-         </div>
-       </div>
-
-        <div class="articles-container2">
-          <div class="article-block article-block-right">
-            <header>
-              <h1>A heading here</h1>
-              <p>Posted by John Doe</p>
-            </header>
-            <p>Lorem Ipsum dolor set amet....</p>
-          </div>
-
-          <div class="article-block">
-            <header>
-              <h1>A heading here</h1>
-              <p>Posted by John Doe</p>
-            </header>
-            <p>Lorem Ipsum dolor set amet....</p>
-          </div>
-
-          <div class="article-block article-block-right">
-            <header>
-              <h1>A heading here</h1>
-              <p>Posted by John Doe</p>
-            </header>
-            <p>Lorem Ipsum dolor set amet....</p>
-          </div>
-
-          <div class="article-block">
-            <header>
-              <h1>A heading here</h1>
-              <p>Posted by John Doe</p>
-            </header>
-            <p>Lorem Ipsum dolor set amet....</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="info">
-      <div class="info-block"
-        <h1 class="section-tittle">O mnie</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a posuere ante.
-          Mauris sed lobortis odio, vitae convallis lectus. Donec a mi commodo, eleifend ex ut, dignissim felis.
-          Morbi interdum consectetur bibendum. Etiam non ultricies est, et facilisis ligula. Cras placerat tempor facilisis.
-          Donec vel ligula feugiat, venenatis augue ac, maximus dui. Sed non nibh pellentesque, feugiat orci sed, dapibus velit.
-        </p>
-        <p>
-          Fusce ut lectus lacus. Nullam gravida nisl tortor, ac tempor turpis suscipit vel.
-          Sed erat mauris, consequat ut semper id, condimentum vel augue. Sed a augue pulvinar, tincidunt ante ac, laoreet tortor.
-          Proin luctus, est eu ultricies consequat, mi lacus pretium felis, ac pulvinar sem ex sed ex.
-          Curabitur justo tellus, laoreet at tempus a, commodo sed ligula. Sed finibus est libero, et tincidunt odio sollicitudin sed.
-          Aliquam sed risus et eros fringilla pretium vitae in ex. Curabitur rutrum id odio non tristique.
-          Fusce mauris metus, volutpat malesuada commodo non, fermentum eget eros. Duis ullamcorper elit id lobortis vehicula.
-        </p>
-      </div>
-    </section>
+<! HEADER ----------------------------------------------------------- >
+<header id="header" class="page-header">
+  <div class="header-container-left">
+    <div id="nav-button" class="hamburger-button">&#9776;</div>
+    <img id="header-logo" class="logo" src="img/plant-logo.png" alt="logo">
   </div>
+
+  <div class="header-container-right">
+    <h3>MK, kierunek, grupa 5</h3>
+  </div>
+</header>
+
+<! SIDEBAR ----------------------------------------------------------- >
+<div id="nav-menu" class="sidebar">
+  <ul>
+    <li><a href="#main-page">Strona główna</a></li>
+    <li><a href="#articles">Artykuły</a></li>
+    <li><a href="#about-me">O mnie</a></li>
+    <li><a href="#contact-me">Kontakt</a></li>
+    <li><a hred="#">Zwierzęta</a></li>
+  </ul>
+</div>
+
+<! MAIN SECTION ------------------------------------------------------ >
+<div id="content" class="page-content">
+
+  <! WELCOME PAGE ------------------------- >
+  <section id="description" class="welcome-page">
+    <div class="info-block">
+      <h1 class="section-tittle">Domowe rośliny ozdobne</h1>
+    </div>
+  </section>
+
+  <! TABLE OF CONTENT --------------------- >
+  <section id="table-of-content" class="info">
+    <div class="info-block">
+      <h1 class="section-tittle">Propozycje roślin</h1>
+    </div>
+  </section>
+
+  <! ARTICLES ----------------------------- >
+  <section id="articles" class="articles">
+    <div class="info-block">
+      <h1 class="section-tittle">Jak zadbać o roślinę?</h1>
+    </div>
+  </section>
+
+  <! CONTACT ME --------------------------- >
+  <section id="form" class="contact-page">
+    <div class="info-block">
+      <h1 class="section-tittle">Napisz do mnie!</h1>
+    </div>
+
+    <div class="form">
+      <form action="GET">
+        <input  type="text" id="form-name" placeholder="Imie"><br>
+        <input type="text" id="form-surname" placeholder="Nazwisko"><br>
+        <select id="form-subject">
+          <option value="message">Wiadomosc</option>
+          <option value="new-plant">Propozycja nowej rosliny</option>
+          <option value="mistake-report">Blad na stronie</option>
+        </select><br>
+        <textarea id="form-content" placeholder="Tresc"></textarea>
+        <div>
+          <input type="checkbox" id="form-checkbox">
+          <label for="form-checkbox" class="form-checkbox-label">Wyrażam zgodę na przetwarzanie danych</label>
+        </div>
+        <button type="button" id="form-button" class="form-button">Wyslij</button>
+      </form>
+    </div>
+  </section>
+
+  <! ANIMALS --------------------------- >
+  <section id="js-section">
+    <ul id="animals">
+
+    </ul>
+  </section>
+
+</div>
+
+<! FOOTER ------------------------------------------------------------ >
+<footer id="foot" class="page-footer">
+    <a href="http://ogrodnik-amator.pl/galeria_roslin_pokojowych.php" target="_blank">
+      Katalog domowych roślin ozdobnych
+    </a>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
